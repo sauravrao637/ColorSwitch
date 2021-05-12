@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="BallSelection" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="398.0" stylesheets="@../Stylesheet/GameMenuD.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ColorSwitch.selectBall">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="398.0" style="-fx-background-color: black;">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+               <image>
+                  <Image url="@../Assets/star.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="available" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="200.0" text="0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin></Label>
+            <Button fx:id="home_btn" alignment="CENTER" layoutX="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onKeyTyped="#home" onMouseClicked="#home" prefHeight="70.0" prefWidth="70.0" styleClass="home" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <ScrollPane hbarPolicy="NEVER" hmax="0.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="398.0" style="-fx-border-width: 0; -fx-background-color: black;" vbarPolicy="NEVER">
+        <content>
+          <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="400.0" style="-fx-background-color: black; -fx-border-width: 0;" stylesheets="@../Stylesheet/GameMenuD.css">
+               <children>
+                  <ImageView fx:id="ball1" fitHeight="200.0" fitWidth="200.0" layoutX="16.0" layoutY="16.0" onMouseClicked="#selectBall1" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/circleGreen.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ball2" fitHeight="200.0" fitWidth="200.0" layoutX="186.0" layoutY="225.0" onMouseClicked="#selectBall2" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/squareRed.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ball3" fitHeight="200.0" fitWidth="200.0" layoutX="16.0" layoutY="450.0" onMouseClicked="#selectBall3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/triangleBlue.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="283.0" layoutY="81.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="78.0" scaleX="2.0" scaleY="2.0" text="x1" />
+                  <Label layoutX="55.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="78.0" scaleX="2.0" scaleY="2.0" text="x2" />
+                  <Label layoutX="283.0" layoutY="515.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="78.0" scaleX="2.0" scaleY="2.0" text="x3" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane fx:id="changeNamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="398.0" stylesheets="@../Stylesheet/GameMenuD.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ColorSwitch.changeName">
+   <children>
+      <Button fx:id="submit_btn1" alignment="CENTER" layoutX="150.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#submit" styleClass="submit" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#5900ff" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <TextField fx:id="changeNameField" alignment="CENTER" layoutX="50.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="300.0" promptText="Name" styleClass="changeName-field">
+         <effect>
+            <Glow level="0.49" />
+         </effect>
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

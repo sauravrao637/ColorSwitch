@@ -1,0 +1,4 @@
+references
+darktheme -> https://code.makery.ch/library/javafx-tutorial/part4/
+rotation -> https://www.javatpoint.com/javafx-rotate-transition
+images -> https://www.freeiconspng.com/downloadimg/16888

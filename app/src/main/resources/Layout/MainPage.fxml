@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="398.0" stylesheets="@../Stylesheet/GameMenuD.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ColorSwitch.MainPageController">
+   <children>
+      <Button fx:id="reloadG_btn" layoutX="160.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#reload" prefHeight="32.0" prefWidth="200.0" styleClass="reload" />
+      <Button fx:id="shop_btn" layoutX="300.0" layoutY="309.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#shop" prefHeight="32.0" prefWidth="200.0" styleClass="shop" />
+      <Button fx:id="shop_btn1" layoutX="20.0" layoutY="309.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#leaderboard" prefHeight="32.0" prefWidth="200.0" styleClass="lb" />
+      <Button fx:id="newG_btn" layoutX="160.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#newGame" prefHeight="32.0" prefWidth="200.0" styleClass="new" />
+      <Button fx:id="name_btn" layoutX="50.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#login" prefHeight="64.0" prefWidth="300.0" text="Change Player" />
+      <Button fx:id="name_btn1" layoutX="50.0" layoutY="600.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="64.0" prefWidth="300.0" text="Exit" />
+      <Label fx:id="name_field" alignment="CENTER" contentDisplay="CENTER" layoutY="16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="72.0" prefWidth="396.0" text="Color Switch" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+      <Label fx:id="score_field" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" text="0" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+      <Label fx:id="total_field" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" text="0" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+      <Label layoutX="27.0" layoutY="86.0" scaleX="0.5" scaleY="0.5" text="Total" />
+      <Label layoutX="237.0" layoutY="86.0" scaleX="0.5" scaleY="0.5" text="High Score" />
+      <Button fx:id="musicButton" layoutX="168.0" layoutY="389.0" mnemonicParsing="false" onMouseClicked="#toggleSound" styleClass="sound" />
+   </children>
+</AnchorPane>

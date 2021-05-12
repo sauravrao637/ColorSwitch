@@ -1,0 +1,36 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+    id 'java'
+}
+jar {
+    baseName = 'ColorSwitch'
+    version = '0.1.0'
+    manifest {
+        attributes(
+                'Main-Class': 'ColorSwitch.Mainn'
+        )
+    }
+}
+configurations {
+    runtime
+}
+
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+    implementation 'com.google.guava:guava:30.0-jre'
+}
+javafx {
+    version = "16"
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media' ]
+}
+application {
+    mainClass = 'ColorSwitch.Mainn'
+}

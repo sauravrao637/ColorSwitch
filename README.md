@@ -1,7 +1,7 @@
 ## About this project
-<object data="Color Switch.pdf" type="application/pdf" width="700px" height="700px">
+<object data="Color switch.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="Color switch.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="Color Switch.pdf">Download PDF</a>.</p>
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="Color switch.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 <object data="objective.pdf" type="application/pdf" width="700px" height="700px">
